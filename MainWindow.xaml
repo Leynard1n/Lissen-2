@@ -6,14 +6,42 @@
         xmlns:local="clr-namespace:Lissen_2"
         mc:Ignorable="d"
          xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-        Title="Приложение для пользователей" Height="600" Width="800">
-    <Grid Background="#ffdadada">
+        Title="Stealm" Height="600" Width="800" WindowStyle="ThreeDBorderWindow" WindowState="Maximized">
+    <Grid Background="#9370DB">
+        
+        <Border CornerRadius="200" Background="#191970" Height="300" Width="300"  Margin="490,274,10,10" Opacity="0.5" RenderTransformOrigin="0.322,0.226"/>
+        <Border CornerRadius="200" Background="#191970" Height="250" Width="250"  Margin="60,334,490,0" Opacity="0.5" RenderTransformOrigin="0.322,0.226"/>
+        <Border CornerRadius="200" Background="#191970" Height="300" Width="300"  Margin="0,-52,500,336" Opacity="0.5" RenderTransformOrigin="0.322,0.226"/>
+        <Border CornerRadius="200" Background="#191970" Height="220" Width="220"  Margin="510,0,70,364" Opacity="0.5" RenderTransformOrigin="0.322,0.226"/>
+        <Border CornerRadius="200" Background="#000080" Height="180" Width="180"  Margin="400,369,220,35" Opacity="0.5" RenderTransformOrigin="0.322,0.226"/>
+        <Border CornerRadius="200" Background="#000080" Height="180" Width="180"  Margin="220,50,400,354" Opacity="0.5" RenderTransformOrigin="0.322,0.226"/>
+        <Border CornerRadius="200" Background="#000080" Height="150" Width="150"  Margin="675,300,-25,134" Opacity="0.5" RenderTransformOrigin="0.322,0.226"/>
+        <Border CornerRadius="200" Background="#000080" Height="150" Width="150"  Margin="0,292,620,112" Opacity="0.5" RenderTransformOrigin="0.322,0.226"/>
+        <Border CornerRadius="200" Background="#000080" Height="180" Width="180"  Margin="610,72,10,332" Opacity="0.5" RenderTransformOrigin="0.322,0.226"/>
+        <Border CornerRadius="200" Background="#800080" Height="130" Width="130"  Margin="335,26,335,428" Opacity="0.5" RenderTransformOrigin="0.322,0.226"/>
+        <Border CornerRadius="200" Background="#800080" Height="130" Width="130"  Margin="699,26,-29,428" Opacity="0.5" RenderTransformOrigin="0.322,0.226"/>
+        <Border CornerRadius="200" Background="#800080" Height="130" Width="130"  Margin="245,424,425,30" Opacity="0.5" RenderTransformOrigin="0.322,0.226"/>
+        <Border CornerRadius="200" Background="#800080" Height="130" Width="130"  Margin="620,235,50,219" Opacity="0.5" RenderTransformOrigin="0.322,0.226"/>
+        <Border CornerRadius="200" Background="#800080" Height="130" Width="130"  Margin="0,170,670,284" Opacity="0.5" RenderTransformOrigin="0.322,0.226"/>
+        <Border CornerRadius="200" Background="#1E90FF" Height="90" Width="90"  Margin="453,50,257,444" Opacity="0.5" RenderTransformOrigin="0.322,0.226"/>
+        <Border CornerRadius="200" Background="#1E90FF" Height="90" Width="90"  Margin="60,248,650,246" Opacity="0.5" RenderTransformOrigin="0.322,0.226"/>
+        <Border CornerRadius="200" Background="#1E90FF" Height="90" Width="90"  Margin="347,464,363,30" Opacity="0.5" RenderTransformOrigin="0.322,0.226"/>
+        <Border CornerRadius="200" Background="#1E90FF" Height="90" Width="90"  Margin="750,190,-40,304" Opacity="0.5" RenderTransformOrigin="0.322,0.226"/>
+        <Border CornerRadius="200" Background="#1E90FF" Height="50" Width="50"  Margin="0,484,730,30" Opacity="0.8" RenderTransformOrigin="0.322,0.226"/>
+        <Border CornerRadius="200" Background="#1E90FF" Height="50" Width="50"  Margin="-35,307,785,227" Opacity="0.8" RenderTransformOrigin="0.322,0.226"/>
+        <Border CornerRadius="200" Background="#1E90FF" Height="50" Width="50"  Margin="745,524,5,10" Opacity="0.8" RenderTransformOrigin="0.322,0.226"/>
+        <Border CornerRadius="200" Background="#1E90FF" Height="50" Width="50"  Margin="285,0,465,558" Opacity="0.8" RenderTransformOrigin="0.322,0.226" VerticalAlignment="Bottom"/>
+        <Border CornerRadius="200" Background="#1E90FF" Height="50" Width="50"  Margin="498,-22,252,556" Opacity="0.8" RenderTransformOrigin="0.322,0.226"/>
+        <Border CornerRadius="200" Background="#1E90FF" Height="50" Width="50"  Margin="714,-68,36,602" Opacity="0.8" RenderTransformOrigin="0.322,0.226"/>
+        <Border CornerRadius="200" Background="#1E90FF" Height="50" Width="50"  Margin="-10,3,760,531" Opacity="0.8" RenderTransformOrigin="0.322,0.226"/>
+        <TextBlock Text="Stealm" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="120" FontFamily="Bauhaus 93" Foreground="#4B0082" />
         <Border MinWidth="400" Margin="15" Background="#fff" VerticalAlignment="Center" Padding="30" MaxWidth="550" CornerRadius="20"  >
+
             <Border.Effect>
                 <DropShadowEffect BlurRadius="30" Color="LightGray" ShadowDepth="0"/>
             </Border.Effect>
             <StackPanel>
-                <TextBlock Text=" Привет !" FontSize="30 " FontWeight="Bold" Margin="0 0 0 20"/>
+                <TextBlock Text=" Создание Пользователя " FontSize="30 " FontWeight="Bold" Margin="0 0 0 20"/>
                 <Grid Margin="0 0 0 20">
                     <Button HorizontalAlignment="Left" Content="Регистрация" />
                     <Button HorizontalAlignment="Right" Content=" Войти" Style="{StaticResource MaterialDesignFlatButton}"/>
@@ -21,10 +49,12 @@
                 <TextBox x:Name="textboxlogin" materialDesign:HintAssist.Hint="Введите логин " Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
                 <PasswordBox x:Name="passbox" materialDesign:HintAssist.Hint="Введите пароль " Style="{StaticResource MaterialDesignFloatingHintPasswordBox}"/>
                 <PasswordBox x:Name="passbox_2" materialDesign:HintAssist.Hint="Подтвердите пароль " Style="{StaticResource MaterialDesignFloatingHintPasswordBox}"/>
-                <TextBox x:Name="textboxemail" materialDesign:HintAssist.Hint="Email " Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
-                <Button Content=" Зарегистрироватся" Margin=" 0 0 20 20 " Click="Button_Reg_Click"/>
+                <TextBox x:Name="textboxemail" materialDesign:HintAssist.Hint="Email " Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="0 0 0 20"/>
+                <Button Content=" Зарегистрироватся" Click="Button_Reg_Click" Width="470" Height="33" />
             </StackPanel>
         </Border>
+
+
     </Grid>
 </Window>
  
